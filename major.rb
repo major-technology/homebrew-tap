@@ -11,7 +11,7 @@ class Major < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/major-technology/cli/releases/download/v0.1.0/major_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a2afe196a834dba487f8feb72b1efcb4ae81ecfe7dd307d3434cd4a2a1b4c13f"
+      sha256 "73aa41af37278e78c89db090fccd52e04fcec298ce538528450eb0345ce6b7a9"
 
       def install
         bin.install "major"
@@ -19,7 +19,7 @@ class Major < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/major-technology/cli/releases/download/v0.1.0/major_0.1.0_darwin_arm64.tar.gz"
-      sha256 "28c5e9a597a44b580b7b432f3f05cab31753813523dd2e29bbb93414e7c79414"
+      sha256 "e29abef3777eb24c9b1821fbf8b3b520fe939223bdcf63cded841b8862e65513"
 
       def install
         bin.install "major"
@@ -30,14 +30,14 @@ class Major < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/major-technology/cli/releases/download/v0.1.0/major_0.1.0_linux_amd64.tar.gz"
-      sha256 "4fdbc703d65fe9d5ce929db7831c03fbfd331c58adf680a9d953f312f4ecac0d"
+      sha256 "8184e692c9dacc540ea7088a9af56ff4edad7fe18473d7e0890cf8e10c6bc970"
       def install
         bin.install "major"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/major-technology/cli/releases/download/v0.1.0/major_0.1.0_linux_arm64.tar.gz"
-      sha256 "d73318266f8a3ff5025b724b320628883ad77564aab124aa9689664031191c43"
+      sha256 "588625731e2f972b23df31c487c366a05de8c9d83d87116ff4c874fc4aee9c51"
       def install
         bin.install "major"
       end
