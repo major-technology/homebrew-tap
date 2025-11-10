@@ -5,21 +5,21 @@
 class Major < Formula
   desc "Major CLI"
   homepage "https://github.com/major-technology/major"
-  version "0.1.14"
+  version "0.1.15"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/major-technology/cli/releases/download/v0.1.14/major_0.1.14_darwin_amd64.tar.gz"
-      sha256 "0eed25174b601666db91627c667615aecbd1ecb9419bf8cfc9b082a74dd60911"
+      url "https://github.com/major-technology/cli/releases/download/v0.1.15/major_0.1.15_darwin_amd64.tar.gz"
+      sha256 "2b75012a57b4f3699a42a18183d4b6a0f2f6a4d611ac4089bd05069d866cb892"
 
       def install
         bin.install "major"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/major-technology/cli/releases/download/v0.1.14/major_0.1.14_darwin_arm64.tar.gz"
-      sha256 "ca36b4112cdee9420f7369ad6caca2c618b47e02215c716266ab0bfcb777ab86"
+      url "https://github.com/major-technology/cli/releases/download/v0.1.15/major_0.1.15_darwin_arm64.tar.gz"
+      sha256 "7829ab0b8c8c3b4bd38f17455de096ae82ef4d34282f09878d0e1786b9c3a4d7"
 
       def install
         bin.install "major"
@@ -29,15 +29,15 @@ class Major < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/major-technology/cli/releases/download/v0.1.14/major_0.1.14_linux_amd64.tar.gz"
-      sha256 "56ab70a851253820ec761e09961aa1549ffcb9ee71ff76e1c79ff4d75ca86b05"
+      url "https://github.com/major-technology/cli/releases/download/v0.1.15/major_0.1.15_linux_amd64.tar.gz"
+      sha256 "4a9231d4bf2c11e66cb74038f982c010b95ab13ea36d5442c108f7055bc305aa"
       def install
         bin.install "major"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/major-technology/cli/releases/download/v0.1.14/major_0.1.14_linux_arm64.tar.gz"
-      sha256 "84876cf486c326bc6098aab1ce750511a80986a3f0a967af410508fd74843378"
+      url "https://github.com/major-technology/cli/releases/download/v0.1.15/major_0.1.15_linux_arm64.tar.gz"
+      sha256 "ec95b0e943b37ba6c298b830758e6b017f38b5bf0becce2e65d7ba7d21e122e0"
       def install
         bin.install "major"
       end
