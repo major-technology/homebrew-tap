@@ -5,21 +5,21 @@
 class Major < Formula
   desc "Major CLI"
   homepage "https://github.com/major-technology/major"
-  version "0.1.18"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/major-technology/cli/releases/download/v0.1.18/major_0.1.18_darwin_amd64.tar.gz"
-      sha256 "ce308339d0db63cee48e9c68a69a27fa75368c9176bf4a8d21a89950279088a9"
+      url "https://github.com/major-technology/cli/releases/download/v0.2.0/major_0.2.0_darwin_amd64.tar.gz"
+      sha256 "b6e6cbe4dff5888c1d6ed0c41fa040d4604a04e1202ceab7bf5407dfb7ae601c"
 
       def install
         bin.install "major"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/major-technology/cli/releases/download/v0.1.18/major_0.1.18_darwin_arm64.tar.gz"
-      sha256 "bc67d0f0e610c26fa236dd3749c79bee4abf9a8fafe24454a343868114b48d63"
+      url "https://github.com/major-technology/cli/releases/download/v0.2.0/major_0.2.0_darwin_arm64.tar.gz"
+      sha256 "48a6b6bb1028a284bd41dd59018f281c3fb6b0d1172c78006b3fa279032353c7"
 
       def install
         bin.install "major"
@@ -29,15 +29,15 @@ class Major < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/major-technology/cli/releases/download/v0.1.18/major_0.1.18_linux_amd64.tar.gz"
-      sha256 "5971cc1ee5eee69a86993ba352478c909378a13118cc4aa70609fba49600b7c3"
+      url "https://github.com/major-technology/cli/releases/download/v0.2.0/major_0.2.0_linux_amd64.tar.gz"
+      sha256 "caca8af27076a7d1ab03d9b1204d4ba13cc1453e7f589cf56442ca5f191d8d87"
       def install
         bin.install "major"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/major-technology/cli/releases/download/v0.1.18/major_0.1.18_linux_arm64.tar.gz"
-      sha256 "682b823a70972721434eec53a21ef8ae5012b8f728811f74d68c04062624ec49"
+      url "https://github.com/major-technology/cli/releases/download/v0.2.0/major_0.2.0_linux_arm64.tar.gz"
+      sha256 "df9dd316be1572066a517cf7d20dab31e5ec7e9c9c9c8bddb618cf456fadc987"
       def install
         bin.install "major"
       end
