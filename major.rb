@@ -5,21 +5,21 @@
 class Major < Formula
   desc "Major CLI"
   homepage "https://github.com/major-technology/major"
-  version "0.2.16"
+  version "0.2.17"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.16/major_0.2.16_darwin_amd64.tar.gz"
-      sha256 "cfec7012d5337a1b45762953a33bb69e4af87bac9bd92184c96b3f56e93ad08a"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.17/major_0.2.17_darwin_amd64.tar.gz"
+      sha256 "b020dc6a3825ec8ff3c3f5312988b69132f8dd983eaa92163cc4a944f4ac9a13"
 
       def install
         bin.install "major"
       end
     end
     if Hardware::CPU.arm?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.16/major_0.2.16_darwin_arm64.tar.gz"
-      sha256 "4991ae145e8fcaa7239ff10af04610f23007432a3d51b6ed9e63bd5d502f08e9"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.17/major_0.2.17_darwin_arm64.tar.gz"
+      sha256 "f8a54ee2ac1f35a703cf0813bf8f5f736191cdde99ec234503433cc3fa319458"
 
       def install
         bin.install "major"
@@ -29,15 +29,15 @@ class Major < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.16/major_0.2.16_linux_amd64.tar.gz"
-      sha256 "534eb1504ed965230743e3fa139da342ec5afc51bafbcf608caa7a8eaf60f189"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.17/major_0.2.17_linux_amd64.tar.gz"
+      sha256 "771449d483c6b3372de1e8925cf5bdeecc7300c4a81fd93333f176155a88a302"
       def install
         bin.install "major"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.16/major_0.2.16_linux_arm64.tar.gz"
-      sha256 "4969ade15fd0c3575001ab1a6124b878d99259222a86c9e92f45396b01392501"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.17/major_0.2.17_linux_arm64.tar.gz"
+      sha256 "9317cc4f949d0ed24527003fced24494036d77643537b527c3f1d36a261a26f0"
       def install
         bin.install "major"
       end
