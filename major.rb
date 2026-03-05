@@ -5,23 +5,23 @@
 class Major < Formula
   desc "Major CLI"
   homepage "https://github.com/major-technology/major"
-  version "0.2.36"
+  version "0.2.37"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.36/major_0.2.36_darwin_amd64.tar.gz"
-      sha256 "0e2b7fdf2c873c75b4ada862e6261157441810fa5482bb0762ad0664eea8fc45"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.37/major_0.2.37_darwin_amd64.tar.gz"
+      sha256 "29017ed32b8c6f757f81a37c55e93b7880bb44c1b9abfbd17e55f862bcea5375"
 
-      def install
+      define_method(:install) do
         bin.install "major"
       end
     end
     if Hardware::CPU.arm?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.36/major_0.2.36_darwin_arm64.tar.gz"
-      sha256 "adb1983bd6ede7e0d6662784d0f10e54e2486502b2ad0ebad735254ca134cac9"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.37/major_0.2.37_darwin_arm64.tar.gz"
+      sha256 "f3f176d96fd2e56b159465f71b9c9e7d590db9e354338a8111d89999f80cfacb"
 
-      def install
+      define_method(:install) do
         bin.install "major"
       end
     end
@@ -29,16 +29,16 @@ class Major < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.36/major_0.2.36_linux_amd64.tar.gz"
-      sha256 "d40dd47e2bcb9ee8129c27cfaf5d63ea0e8294dbc0a0d37d2a96f93fe25bf66f"
-      def install
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.37/major_0.2.37_linux_amd64.tar.gz"
+      sha256 "c8336b164d8c0aa3e73f82cf12a532b56203514beb84464682a8c435654d3085"
+      define_method(:install) do
         bin.install "major"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.36/major_0.2.36_linux_arm64.tar.gz"
-      sha256 "dbd19efca7d074c295e7ead225ed622a41ae4801d06835a0fe129a8b90be7008"
-      def install
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/0.2.37/major_0.2.37_linux_arm64.tar.gz"
+      sha256 "13ab52fe70904b356e35a7ddf13ee3663228da79d46d1c38d6b262d36a71153d"
+      define_method(:install) do
         bin.install "major"
       end
     end
