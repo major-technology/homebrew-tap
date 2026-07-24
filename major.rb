@@ -5,21 +5,21 @@
 class Major < Formula
   desc "Major CLI"
   homepage "https://github.com/major-technology/major"
-  version "1.0.8"
+  version "1.0.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.8/major_1.0.8_darwin_amd64.tar.gz"
-      sha256 "7a26aef3e4459ee7b835858e0761f848ec06b2849d3328c03c88ec7920f4e1ee"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.9/major_1.0.9_darwin_amd64.tar.gz"
+      sha256 "2aa2c06dc67e997e496939dd8aa31144e36fabfa689c8365be587737ef074096"
 
       define_method(:install) do
         bin.install "major"
       end
     end
     if Hardware::CPU.arm?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.8/major_1.0.8_darwin_arm64.tar.gz"
-      sha256 "7dcbb6e81720efd3a5545dec456a8dd2675d5747f756ab6e34013c4af667f86b"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.9/major_1.0.9_darwin_arm64.tar.gz"
+      sha256 "5211c430e410a6267d37a8da1bf2ad51e8fcd972fddf199f9a94586c3a953c70"
 
       define_method(:install) do
         bin.install "major"
@@ -29,15 +29,15 @@ class Major < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.8/major_1.0.8_linux_amd64.tar.gz"
-      sha256 "4149af600168af9162fb67b681affaa0f807280dbe96d7ec85fe6b9f7e0873bb"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.9/major_1.0.9_linux_amd64.tar.gz"
+      sha256 "9c4a925e83dff5c47ca272aa514c131cb681e0d28691ad2b9ec0d0fe33a2cdbf"
       define_method(:install) do
         bin.install "major"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.8/major_1.0.8_linux_arm64.tar.gz"
-      sha256 "10f78118fac5823d559cdd68c6875118eed2855a0abd2e81b4bf6f0649d4b73a"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.9/major_1.0.9_linux_arm64.tar.gz"
+      sha256 "389e265fac660cbe8bab41a0f39194f1ba14aba3dc1d1ee4ddbc73af45f0aba9"
       define_method(:install) do
         bin.install "major"
       end
