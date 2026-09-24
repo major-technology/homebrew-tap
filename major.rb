@@ -5,21 +5,21 @@
 class Major < Formula
   desc "Major CLI"
   homepage "https://github.com/major-technology/major"
-  version "1.0.13"
+  version "1.0.14"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.13/major_1.0.13_darwin_amd64.tar.gz"
-      sha256 "cbe4f6b582a4802f032d0493553995bb9cb9737d8f954e1f5f9a00fd5dbc9dc9"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.14/major_1.0.14_darwin_amd64.tar.gz"
+      sha256 "58466a3751d4fc7567f75b1ff9f594806d56e5ca79f8f337dfbea7c9bcde6ea2"
 
       define_method(:install) do
         bin.install "major"
       end
     end
     if Hardware::CPU.arm?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.13/major_1.0.13_darwin_arm64.tar.gz"
-      sha256 "4721acbc3e39aead1c40006ba59848b80f3b942c175dd9f0b81e199311ce7257"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.14/major_1.0.14_darwin_arm64.tar.gz"
+      sha256 "4c9c6c57d8b2e404ace894c4a86b46895f54f6a077930a87c780d5ad6cd0b9b7"
 
       define_method(:install) do
         bin.install "major"
@@ -29,15 +29,15 @@ class Major < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.13/major_1.0.13_linux_amd64.tar.gz"
-      sha256 "f5a08d5710decba2520c41927497aed8498385a388840b4a581aabea602d9f20"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.14/major_1.0.14_linux_amd64.tar.gz"
+      sha256 "6b1f9bcccf5a3ebc62400d370c07f4fc86fb40529bfe136e702993b0514aa73a"
       define_method(:install) do
         bin.install "major"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.13/major_1.0.13_linux_arm64.tar.gz"
-      sha256 "3493ff76522d9ffb153d0f3e854e109bbff30c1a6ce2259d5b1e756f15ff9909"
+      url "https://major-cli-releases.s3.us-west-1.amazonaws.com/1.0.14/major_1.0.14_linux_arm64.tar.gz"
+      sha256 "cbf65bce7a583b268870ff4375bf67e9b9ce6a1f639948c06a99cb19618debc1"
       define_method(:install) do
         bin.install "major"
       end
